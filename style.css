@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'poppins', sans-serif;
+}
+body{
+	display: grid;
+	height: 100vh;
+	background: linear-gradient(to right, #99004D 0%, #ff0080 100%);
+	place-items: center;
+	overflow: hidden;
+}
+.container{
+	background: #fff;
+	max-width: 350px;
+	width: 100%;
+	padding: 25px 30px;
+	border-radius: 5px;
+	box-shadow: 0 10px 10px rgb(0, 0, 0, 0, 0.15);
+
+}
+.container form .title{
+	font-size: 30px;
+	font-weight: 600;
+	margin: 20px 0px 10px 0px;
+	position: relative;
+
+}
+.container form .title:before{
+	position: absolute;
+	content: '';
+	width: 35px;
+	height: 3px;
+	left: 1px;
+	bottom: 0;
+	background: #ff0080;
+	border-radius: 1px;
+}
+.container form .input-boxs{
+	height: 45px;
+	margin-top: 25px;
+	width: 100%;
+	position: relative;
+}
+.container form .input-boxs input{
+	height: 100%;
+	width: 100%;
+	border: none;
+	outline: none;
+	font-size: 16px;
+}
+.container form .underline:before{
+	position: absolute;
+	content: '';
+	height: 2px;
+	width: 100%;
+	background: #ccc;
+	left: 0;
+	bottom: 0;
+
+}
+.container form .underline:after{
+	position: absolute;
+	content: '';
+	height: 2px;
+	width: 100%;
+	background: linear-gradient(to right, #99004D 0%, #ff0080 100%);
+	left: 0;
+	bottom: 0;
+	transform: scaleX(0);
+	transition: .3s;
+	transform-origin: left;
+
+}
+.container form .input-boxs input:focus ~ .underline:after,
+.container form .input-boxs input:valid ~ .underline:after{
+	transform: scaleX(1);
+	transform-origin: left;
+}
+.container form .botton{
+	margin: 40px 0 20px 0;
+}
+.container form .input-boxs input[type="submit"]{
+	font-size: 17px;
+	border-radius: 5px;
+	background: linear-gradient(to right, #99004D 0%, #ff0080 100%);
+	color: #fff;
+	transition: .3s;
+	cursor: pointer;
+}
+.container form .input-boxs input[type="submit"]:hover{
+	letter-spacing: 1px;
+	background: linear-gradient(to left, #99004D 0%, #ff0080 100%);
+}
+.container .option{
+	font-size: 14px;
+	text-align: center;
+}
+.container .twitter,
+.container .Facebook{
+	font-size: 15px;
+	display: block;
+	width: 100%;
+	height: 45px;
+	padding-left: 20px;
+	line-height: 45px;
+	border-radius: 5px;
+
+}
+.container .twitter a,
+.container .Facebook a{
+	text-decoration: none;
+	color: #fff;
+}
+.container .twitter a i,
+.container .Facebook a i{
+	padding-right: 5px;
+}
+.container .twitter{
+	background: linear-gradient(to left, #00acee 0%, #1abeff 100%);
+	margin: 20px 0 29px 0;
+} 
+.container .Facebook{
+	background: linear-gradient(to left, #3b5998 0%, #477bb8 100%);
+	margin: 20px 0 15px 0;
+} 
+.container .twitter:hover{
+	background: linear-gradient(to right, #00acee 0%, #1abeff 100%);
+} 
+.container .Facebook:hover{
+	background: linear-gradient(to right, #3b5998 0%, #477bb8 100%);
+}
+
+@media(max-width: 350px){
+	body{
+		display: flex;
+		place-items: start;
+		height: 100%;
+		width: 100%;
+		background: none;
+	}
+}
