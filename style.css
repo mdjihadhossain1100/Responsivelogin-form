@@ -123,30 +123,14 @@ body{
 .container .twitter{
 	background: linear-gradient(to left, #00acee 0%, #1abeff 100%);
 	margin: 20px 0 29px 0;
-} 
+}
 .container .Facebook{
 	background: linear-gradient(to left, #3b5998 0%, #477bb8 100%);
 	margin: 20px 0 15px 0;
-} 
+}
 .container .twitter:hover{
 	background: linear-gradient(to right, #00acee 0%, #1abeff 100%);
-} 
+}
 .container .Facebook:hover{
 	background: linear-gradient(to right, #3b5998 0%, #477bb8 100%);
-}
-
-@media(max-width: 500px){
-	body{
-		display: grid;
-		top: 0;
-		height: 100vh;
-		width: 100%;
-		background: none;
-		place-items: normal;
-	}
-	.container{
-		max-width: 500px;
-		width: 100%;
-		height: 100%;
-	}
 }
