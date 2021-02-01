@@ -134,3 +134,9 @@ body{
 .container .Facebook:hover{
 	background: linear-gradient(to right, #3b5998 0%, #477bb8 100%);
 }
+@media only screen and (max-width:800px){
+	.container{
+		max-width: 100%;
+		height:100%;
+	}
+}
